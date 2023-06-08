@@ -1,17 +1,13 @@
 import express from 'express';
-import * as url from 'url';
-import { resolve } from 'node:path';
+import {fileURLToPath} from 'url';
+import {resolve} from 'node:path';
+
+const PORT = 3000;
+const saticDirPath = './dist';
+const distPath = resolve(fileURLToPath(new URL('.', import.meta.url)), saticDirPath);
+const appEntryPoint = resolve(distPath, 'index.html');
 
 const app = express();
-const PORT = 3000;
-
-
-const distPath = resolve(url.fileURLToPath(new URL('.', import.meta.url)), './dist');
-
 app.use(express.static(distPath));
-app.all('*', (req, res) => {
-  res.sendFile(resolve(distPath, 'index.html'));
-});
-app.listen(PORT, function () {
-  console.log(`Example app listening on port ${PORT}!`);
-});
+app.all('*', (_, res) => res.sendFile(appEntryPoint));
+app.listen(PORT);
