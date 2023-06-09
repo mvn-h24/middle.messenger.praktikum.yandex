@@ -1,5 +1,4 @@
 import express from 'express';
-import {fileURLToPath} from 'url';
 import {resolve} from 'node:path';
 
 const PORT = 3000;
