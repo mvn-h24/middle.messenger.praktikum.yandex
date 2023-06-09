@@ -4,7 +4,6 @@ import {resolve} from 'node:path';
 
 const PORT = 3000;
 const saticDirPath = './dist';
-const distPath = resolve(fileURLToPath(new URL('.', import.meta.url)), saticDirPath);
 const appEntryPoint = resolve('dist', 'index.html');
 
 const app = express();
