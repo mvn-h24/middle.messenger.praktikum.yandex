@@ -1,4 +1,3 @@
-import {html} from "lit-html";
 import {CenterizedLayout} from "@/shared/ui/CenterizedLayout/index.js";
 import {PageError} from "@/shared/ui/PageError/index.js";
 
