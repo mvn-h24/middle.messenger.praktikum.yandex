@@ -1,3 +1,5 @@
+import {useSlot} from "@/shared/useSlot.js";
+
 export class Router {
     constructor({routes}) {
         if(typeof routes !== 'object'){
@@ -7,26 +9,20 @@ export class Router {
     }
     matchRoute(){
         const routeName= document.location.pathname;
-        const route = this.routeMap.get(routeName);
-        if(typeof route !== 'function'){
-            throw new Error('Count not matched');
-        }
-        this.currentRoute = route;
+        this.currentRoute = this.routeMap.get(routeName);
         return this;
     }
 
     get route(){
-        if(typeof this.currentRoute !== 'function'){
-            throw new Error('Route not matched');
-        }
         return this.currentRoute;
     }
 
     get routeTemplate() {
-        return this.route()
+        return useSlot(this.route)
     }
 
     get currentPageTemplate(){
         return this.matchRoute().routeTemplate;
+
     }
 }
