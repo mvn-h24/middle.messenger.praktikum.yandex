@@ -1,3 +1,4 @@
 import {html} from "lit-html";
-
-export default () => html`got server error, reload later`;
+import {CenterizedLayout} from '@/shared/ui/CenterizedLayout'
+import {PageError} from "@/shared/ui/PageError";
+export default () => CenterizedLayout({slot:PageError({status:500, message:'Мы уже фиксим'})});
