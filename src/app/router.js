@@ -1,4 +1,3 @@
-import {html} from "lit-html";
 import {Router} from '@/shared/router'
 import indexPage from '@/pages/index';
 import pageNotFound from '@/pages/404';

@@ -10,6 +10,9 @@ dependencies:
     version: 2.7.4
 
 devDependencies:
+  '@types/css-modules':
+    specifier: ^1.0.2
+    version: 1.0.2
   '@types/node':
     specifier: ^20.2.0
     version: 20.2.0
@@ -19,12 +22,15 @@ devDependencies:
   express:
     specifier: ^4.18.2
     version: 4.18.2
+  typescript:
+    specifier: ^5.1.3
+    version: 5.1.3
   vite:
     specifier: ^4.3.9
     version: 4.3.9(@types/node@20.2.0)
   vite-tsconfig-paths:
     specifier: ^4.2.0
-    version: 4.2.0(vite@4.3.9)
+    version: 4.2.0(typescript@5.1.3)(vite@4.3.9)
 
 packages:
 
@@ -225,6 +231,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@types/css-modules@1.0.2:
+    resolution: {integrity: sha512-tyqlt2GtEBdsxJylh78zSxI/kOJK5Iz8Ta4Fxr8KLTP8mD/IgMa84D8EKPS/AWCp+MDoctgJyikrVWY28GKmcg==}
+    dev: true
 
   /@types/node@20.2.0:
     resolution: {integrity: sha512-3iD2jaCCziTx04uudpJKwe39QxXgSUnpxXSvRQjRvHPxFQfmfP4NXIm/NURVeNlTCc+ru4WqjYGTmpXrW9uMlw==}
@@ -770,7 +780,7 @@ packages:
     engines: {node: '>=0.6'}
     dev: true
 
-  /tsconfck@2.1.1:
+  /tsconfck@2.1.1(typescript@5.1.3):
     resolution: {integrity: sha512-ZPCkJBKASZBmBUNqGHmRhdhM8pJYDdOXp4nRgj/O0JwUwsMq50lCDRQP/M5GBNAA0elPrq4gAeu4dkaVCuKWww==}
     engines: {node: ^14.13.1 || ^16 || >=18}
     hasBin: true
@@ -779,6 +789,8 @@ packages:
     peerDependenciesMeta:
       typescript:
         optional: true
+    dependencies:
+      typescript: 5.1.3
     dev: true
 
   /type-is@1.6.18:
@@ -787,6 +799,12 @@ packages:
     dependencies:
       media-typer: 0.3.0
       mime-types: 2.1.35
+    dev: true
+
+  /typescript@5.1.3:
+    resolution: {integrity: sha512-XH627E9vkeqhlZFQuL+UsyAXEnibT0kWR2FWONlr4sTjvxyJYnyefgrkyECLzM5NenmKzRAy2rR/OlYLA1HkZw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
     dev: true
 
   /unpipe@1.0.0:
@@ -815,7 +833,7 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /vite-tsconfig-paths@4.2.0(vite@4.3.9):
+  /vite-tsconfig-paths@4.2.0(typescript@5.1.3)(vite@4.3.9):
     resolution: {integrity: sha512-jGpus0eUy5qbbMVGiTxCL1iB9ZGN6Bd37VGLJU39kTDD6ZfULTTb1bcc5IeTWqWJKiWV5YihCaibeASPiGi8kw==}
     peerDependencies:
       vite: '*'
@@ -825,7 +843,7 @@ packages:
     dependencies:
       debug: 4.3.4
       globrex: 0.1.2
-      tsconfck: 2.1.1
+      tsconfck: 2.1.1(typescript@5.1.3)
       vite: 4.3.9(@types/node@20.2.0)
     transitivePeerDependencies:
       - supports-color

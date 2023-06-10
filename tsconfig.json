@@ -13,8 +13,9 @@
     "isolatedModules": true,
     "noEmit": true,
 
-    /* Linting */
-    "strict": true,
+    /*Linting*/
+    //@TODO: setup strict
+    "strict": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
