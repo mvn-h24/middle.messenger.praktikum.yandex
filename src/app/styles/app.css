@@ -12,7 +12,7 @@ body {
     font-variation-settings: "wdth" 500;
     font-size: 13px;
     font-style: normal;
-    color: var(--typo-primary);
+    color: var(--typo--primary);
     line-height: 1;
     display: flex;
     flex-direction: column;

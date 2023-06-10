@@ -1,0 +1,28 @@
+.loginIsland__header{
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0;
+}
+.loginIsland__submit{
+    width: 100%;
+    margin-top: auto;
+}
+.loginIsland__signinLink{
+    margin-top: 15px;
+}
+.loginIsland__input{
+    width: 100%;
+}
+.loginIsland__input:not(:first-child){
+    margin-top: 25px;
+}
+.loginIsland{
+    width: 100%;
+    max-width: 340px;
+    min-height: 450px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+}
