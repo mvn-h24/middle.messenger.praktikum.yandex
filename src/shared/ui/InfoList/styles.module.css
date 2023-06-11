@@ -1,0 +1,15 @@
+.list{
+    margin: 0;
+}
+.list__item{
+    display: flex;
+    justify-content: space-between;
+}
+.list__itemKey{
+    display: inline;
+}
+.list__itemValue{
+    display: inline;
+    color: var(--typo--ui-secondary);
+    margin: 0;
+}

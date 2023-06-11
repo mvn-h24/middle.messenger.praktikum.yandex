@@ -3,6 +3,9 @@
     font-size: 11px;
     text-decoration: none;
 }
+.appLink--warning {
+    color: var(--ui-warning);
+}
 .appLink:hover {
     text-decoration: underline;
 }
@@ -25,4 +28,13 @@
 }
 .appBtn:hover{
     box-shadow: 5px 5px 5px var(--ui--shadow), -5px 5px 5px var(--ui--shadow);
+}
+
+.listItem{
+    border:none;
+    border-bottom: 1px solid var(--ui-secondary);
+    padding: 10px 0;
+}
+.listItem:last-of-type{
+    border-bottom: none;
 }
