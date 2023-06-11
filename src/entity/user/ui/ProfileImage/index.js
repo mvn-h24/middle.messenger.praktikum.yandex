@@ -1,6 +1,7 @@
 import {html} from "lit-html";
 import {classMap} from "lit-html/directives/class-map.js";
 import cn from './styles.module.css';
+import {when} from "lit-html/directives/when.js";
 
 
 export const ProfileImage = ({name, isUploading, callUpload}) => html`
@@ -9,6 +10,10 @@ export const ProfileImage = ({name, isUploading, callUpload}) => html`
         [cn.profileImage]: true
     })}">
         <button @click=${callUpload} class="${cn.profileImage__btn}"></button>
-        <span class="${cn.profileImage__name}">${name}</span>
+        ${when(
+                name && name.length,
+                () => html`<span class="${cn.profileImage__name}">${name}</span>`,
+                () => null
+        )}
     </div>
 `;
