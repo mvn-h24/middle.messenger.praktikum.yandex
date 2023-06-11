@@ -1,31 +1,20 @@
 import {html} from "lit-html";
 import {CenterizedLayout} from "@/shared/ui/CenterizedLayout";
-import {InfoList} from "@/shared/ui/InfoList";
 import {TestProfile} from "@/entity/user/fixture/test-profile";
-import {ProfileImageModal} from "@/entity/user/ui/ProfileImageModal";
+import {ProfileLayout} from "@/entity/user/ui/ProfileLayout/index.js";
+import {ProfileInfoList} from "@/entity/user/ui/ProfileInfoList.js";
+import {ProfileControlList} from "@/entity/user/ui/ProfileControlList/index.js";
 import cn from './styles.module.css';
 
-const profileList = InfoList({
-    list: TestProfile.info,
-    keyGetter: (item) => item['key'],
-    contentGetter: (item) => item['value'],
-    classes: {
-        [cn.profileView__infoList]:true
-    }
-});
-
-const slot = () => html`
-        <div class="${cn.profileView}">
-            ${ProfileImageModal({name: TestProfile.name})}
-            ${profileList}
-            <div class="${cn.profileView__controlList}">
-                <div class="listItem"><a class="${cn.profileView__link} appLink" href="/profile/edit/">Изменить
-                    данные</a></div>
-                <div class="listItem"><a class="${cn.profileView__link} appLink" href="/profile/change-password/">Изменить
-                    пароль</a></div>
-                <div class="listItem"><a class="${cn.profileView__link} appLink appLink--warning"
-                                         href="/login/">Выйти</a></div>
-            </div>
-        </div>
-    `;
-export default () => CenterizedLayout({slot});
+export default () => {
+    const profile = TestProfile;
+    return CenterizedLayout({
+        slot: ProfileLayout({
+            profile,
+            slot: html`
+                ${ProfileInfoList({profile, classes: {[cn.profileView__infoList]:true}})}
+                ${ProfileControlList({classes: {[cn.profileView__infoList]:true}})}
+            `
+        })
+    })
+};
