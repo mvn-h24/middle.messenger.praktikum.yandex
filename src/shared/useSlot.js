@@ -8,7 +8,7 @@ export function useSlot(containment){
     if(typeof result === 'function'){
         result = result();
     }
-    if(!isTemplateResult(result) && !isDirectiveResult(result)){
+    if(result !== null && !isTemplateResult(result) && !isDirectiveResult(result)){
         throw new Error('Unxepected slot template');
     }
     return result;
