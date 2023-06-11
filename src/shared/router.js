@@ -1,4 +1,4 @@
-import {useSlot} from "@/shared/useSlot.js";
+import {useSlot} from "@/shared/useSlot";
 
 export class Router {
     constructor({routes}) {

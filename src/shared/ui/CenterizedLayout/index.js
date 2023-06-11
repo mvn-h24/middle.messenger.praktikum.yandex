@@ -1,5 +1,7 @@
 import {html} from "lit-html";
 import cn from './styles.module.css';
+import {useSlot} from "@/shared/useSlot";
 export const CenterizedLayout = ({slot}) => {
-    return html`<main class="${cn.layout}">${slot}</main>`
+    const containment = useSlot(slot);
+    return html`<main class="${cn.layout}">${containment}</main>`
 };

@@ -1,6 +1,6 @@
 import {html} from "lit-html";
-import {CenterizedLayout} from "@/shared/ui/CenterizedLayout/index.js";
-import {TextInput} from "@/shared/ui/FormControl/TextInput/index.js";
+import {CenterizedLayout} from "@/shared/ui/CenterizedLayout/index";
+import {TextInput} from "@/shared/ui/FormControl/TextInput/index";
 import cn from '@/pages/login/styles.module.css';
 
 const slot = html`
