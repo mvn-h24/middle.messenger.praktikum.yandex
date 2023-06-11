@@ -35,6 +35,7 @@
     transition: var(--ui-transition);
     opacity: 0;
 }
+.profileImage__btn_uploading,
 .profileImage__btn:hover::before {
     opacity: 1;
 }
