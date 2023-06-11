@@ -1,0 +1,11 @@
+.appLink {
+    color: var(--ui-control--primary);
+    font-size: 11px;
+    text-decoration: none;
+}
+.appLink--warning {
+    color: var(--ui-warning);
+}
+.appLink:hover {
+    text-decoration: underline;
+}

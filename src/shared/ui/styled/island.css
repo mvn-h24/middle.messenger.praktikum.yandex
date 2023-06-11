@@ -1,0 +1,6 @@
+.island{
+    box-shadow: 0 0 6px var(--ui--shadow);
+    background: var(--typo--ui-primary);
+    border-radius: 12px;
+    user-select: none;
+}

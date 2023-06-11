@@ -1,0 +1,8 @@
+.listItem{
+    border:none;
+    border-bottom: 1px solid var(--ui-secondary);
+    padding: 10px 0;
+}
+.listItem:last-of-type{
+    border-bottom: none;
+}
