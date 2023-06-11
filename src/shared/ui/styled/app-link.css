@@ -2,10 +2,24 @@
     color: var(--ui-control--primary);
     font-size: 11px;
     text-decoration: none;
+    cursor: pointer;
+}
+button.appLink {
+    background: none;
+    border: none;
+    padding: 0;
 }
 .appLink--warning {
     color: var(--ui-warning);
 }
 .appLink:hover {
     text-decoration: underline;
+}
+
+
+.appLink--invereted {
+    text-decoration: underline;
+}
+.appLink--invereted:hover {
+    text-decoration: none;
 }

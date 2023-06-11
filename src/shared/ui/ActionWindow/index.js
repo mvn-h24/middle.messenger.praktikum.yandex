@@ -1,6 +1,6 @@
 import {html} from "lit-html";
-import {useSlot} from "@/shared/useSlot";
 import {classMap} from "lit-html/directives/class-map.js";
+import {useSlot} from "@/shared/useSlot";
 import cn from './styles.module.css';
 
 export const ActionWindow = (
@@ -8,22 +8,25 @@ export const ActionWindow = (
         slot = null,
         classes = {},
         fixed = true,
-        onClose=()=> {}
+        onClose = () => {
+        }
     } =
         {
             slot: null,
             classes: {},
             fixed: true,
-            onClose:()=> {}
+            onClose: () => {
+            }
         }
 ) => {
     const content = useSlot(slot);
     const controller = new AbortController();
-    document.addEventListener('keydown', (...args) => {
-        console.log(args);
-        onClose();
-        controller.abort();
-    }, {signal:controller.signal});
+    document.addEventListener('keydown', (e) => {
+        if (e.key === "Escape") {
+            onClose();
+            controller.abort();
+        }
+    }, {signal: controller.signal});
     return html`
         <div class="${cn.modalWindow}">
             <div class="${cn.modalWindow__overlay}">

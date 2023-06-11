@@ -15,7 +15,9 @@
 .modalWindow__island{
     max-width: 340px;
     width: 100%;
+    padding: 30px 40px;
+    box-sizing: border-box;
 }
 .modalWindow__island_fixed{
-    height: 255px;
+    max-height: 255px;
 }
