@@ -1,22 +1,26 @@
-.loginIsland__header{
+.island__header{
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0;
+    margin: 0 0 50px 0;
 }
-.loginIsland__submit{
+.island__submit{
     width: 100%;
     margin-top: auto;
 }
-.loginIsland__signinLink{
+.island__signinLink{
     margin-top: 15px;
 }
-.loginIsland__input{
+.island__input{
     width: 100%;
 }
-.loginIsland__input:not(:first-child){
+.island__input:not(:first-of-type){
     margin-top: 25px;
 }
-.loginIsland{
+.island__input:last-of-type{
+    margin-bottom: 60px;
+}
+.island{
     width: 100%;
     max-width: 340px;
     min-height: 450px;
