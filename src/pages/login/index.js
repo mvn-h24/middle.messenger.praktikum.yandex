@@ -4,7 +4,7 @@ import {CenterizedLayout} from "@/shared/ui/CenterizedLayout/index.js";
 import {TextInput} from "@/shared/ui/FormControl/TextInput/index.js";
 
 const slot = html`
-    <form class="island ${cn.island}">
+    <form class="island island--shaded ${cn.island}">
         <h1 class="${cn.island__header}">Вход</h1>
         ${TextInput({
             placeholder: 'Логин',
