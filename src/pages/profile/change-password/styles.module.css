@@ -1,0 +1,25 @@
+.profileEdit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profileEdit__submit{
+    margin-top: 165px;
+    width: 100%;
+    max-width: 280px;
+}
+
+.profileEdit__list{
+    margin-top: 85px;
+    width: 100%;
+}
+
+.profileEdit__listItem{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profileEdit__input{
+    text-align: right;
+}
+

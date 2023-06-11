@@ -5,6 +5,6 @@ export const ProfileEditList = ({profile, classes={}}={}) => InfoList({
     list: profile.info,
     keyGetter: (item) => item['key'],
     contentGetter: (item) =>
-        html`<input class="hiddenInput" placeholder=${item['value']} name=${item['key']}/>`,
+        html`<input class="hiddenInput" style="text-align: right" placeholder=${item['value']} name=${item['key']}/>`,
     classes
 });
