@@ -1,0 +1,16 @@
+.profileView{
+    max-width: 510px;
+    width: 100%;
+}
+
+.profileView__controlList{
+    margin-top: 50px;
+}
+
+.profileView__infoList{
+    margin-top: 60px;
+}
+
+.profileView__link{
+    font-size: inherit !important;
+}
