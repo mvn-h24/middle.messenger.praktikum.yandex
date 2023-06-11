@@ -9,5 +9,5 @@
     outline: none;
 }
 .input::placeholder{
-    color: var(--typo--ui-scondary);
+    color: var(--typo--ui-secondary);
 }

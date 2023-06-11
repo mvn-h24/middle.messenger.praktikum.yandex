@@ -4,7 +4,10 @@
     --ui-control--primary: hsl(223, 89%, 58%);
     --typo--ui-primary: hsl(225, 100%, 100%);
 
-    --typo--ui-scondary: hsl(0, 0%, 60%);
+    --typo--ui-secondary: hsl(0, 0%, 60%);
+    --typo--ui-accent: hsl(0, 0%, 100%);
+
+    --ui-secondary: hsl(0, 0%, 94%);
 
     --ui--shadow: hsla(0, 0%, 0%, 0.14);
     --ui-transition: .2s linear;
