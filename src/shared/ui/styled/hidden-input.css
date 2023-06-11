@@ -1,0 +1,7 @@
+.hiddenInput{
+    border: none;
+    padding: 0;
+}
+.hiddenInput::placeholder{
+    color: var(--typo--ui-secondary);
+}
