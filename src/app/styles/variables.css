@@ -6,6 +6,7 @@
 
      --ui-bg--primary: hsl(0, 0%, 100%);
     --ui-bg--secondary: hsl(0, 0%, 98%);
+    --ui-bg--secondary-dark: hsl(0, 0%, 92%);
 
     --typo--ui-secondary: hsl(0, 0%, 60%);
     --typo--ui-accent: hsl(0, 0%, 100%);

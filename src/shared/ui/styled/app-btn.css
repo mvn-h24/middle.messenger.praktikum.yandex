@@ -8,7 +8,21 @@
     background-color: var(--ui-control--primary);
     cursor: pointer;
     transition: var(--ui-transition);
+    display: inline-block;
+    box-sizing: border-box;
 }
 .appBtn:hover{
     box-shadow: 5px 5px 5px var(--ui--shadow), -5px 5px 5px var(--ui--shadow);
+}
+.appBtn_icon {
+    --size:28px;
+    border-radius: 50%;
+    background-size: 11px 10px;
+    background-position: center;
+    width: var(--size);
+    height: var(--size);
+}
+.appBtn_iconArrowLeft {
+    background-image: url("/assets/arrow-left.svg");
+    background-repeat: no-repeat;
 }
