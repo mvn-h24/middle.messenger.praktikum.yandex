@@ -1,7 +1,7 @@
 import {InfoList} from "@/shared/ui/InfoList/index.js";
 import {html} from "lit-html";
 
-export const ProfileEditList = ({profile, classes={}}={}) => InfoList({
+export const ProfileEditList = ({profile, classes = {}} = {profile: {info: []}, classes: {}}) => InfoList({
     list: profile.info,
     keyGetter: (item) => item['key'],
     contentGetter: (item) =>

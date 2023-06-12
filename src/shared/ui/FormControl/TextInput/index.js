@@ -5,13 +5,13 @@ import {classMap} from "lit-html/directives/class-map.js";
 export const TextInput = (
     {
         name,
-        type = 'text',
         placeholder,
+        type = 'text',
         classes = {}
     } = {
-        name,
-        type: 'text',
+        name: undefined,
         placeholder: undefined,
+        type: 'text',
         classes: {}
     }
 ) =>

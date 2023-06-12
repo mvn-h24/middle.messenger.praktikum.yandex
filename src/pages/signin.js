@@ -39,6 +39,7 @@ const slot = html`
             classes: {[cn.island__input]: true}
         })}
         ${TextInput({
+            name: 'passwordControl',
             placeholder: 'Пароль (еще раз)',
             type: 'password',
             classes: {[cn.island__input]: true}

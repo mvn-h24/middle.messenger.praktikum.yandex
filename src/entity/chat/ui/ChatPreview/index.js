@@ -3,7 +3,13 @@ import {when} from "lit-html/directives/when.js";
 import {classMap} from "lit-html/directives/class-map.js";
 import cn from './style.module.css';
 
-export const ChatPreview = ({chatMeta={}, classes={}}={}) => {
+export const ChatPreview = ({chatMeta = {}, classes = {}} = {
+    chatMeta: {
+        name: null,
+        lastMessage: null,
+        unreaded: null
+    }
+}) => {
     const {name, lastMessage, unreaded} = chatMeta;
     return html`
         <div class=${classMap({
