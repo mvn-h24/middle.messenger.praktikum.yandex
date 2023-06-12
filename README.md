@@ -17,12 +17,12 @@ Self-hosted приложение для онлайн общения.
 
 ### Страницы
 
-- [Главная - списко чатов](/)
-- [404](/404/)
-- [500](/500/)
-- [Атворизация](/login/)
-- [Регистрация](/signin/)
-- [Профиль](/profile/)
-- [Профиль, редактировать](/profile/edit/)
-- [Профиль, сменить пароль](/profile/change-password/)
-- [Чат - диалог](/chat/detail/)
+- [Главная - списко чатов](https://iridescent-cocada-21bdb1.netlify.app/)
+- [404](https://iridescent-cocada-21bdb1.netlify.app/404/)
+- [500](https://iridescent-cocada-21bdb1.netlify.app/500/)
+- [Авторизация](https://iridescent-cocada-21bdb1.netlify.app/login/)
+- [Регистрация](https://iridescent-cocada-21bdb1.netlify.app/signin/)
+- [Профиль](https://iridescent-cocada-21bdb1.netlify.app/profile/)
+- [Профиль, редактировать](https://iridescent-cocada-21bdb1.netlify.app/profile/edit/)
+- [Профиль, сменить пароль](https://iridescent-cocada-21bdb1.netlify.app/profile/change-password/)
+- [Чат - диалог](https://iridescent-cocada-21bdb1.netlify.app/chat/detail/)
