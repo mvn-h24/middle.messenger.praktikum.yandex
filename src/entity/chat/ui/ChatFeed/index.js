@@ -6,8 +6,12 @@ import {SearchInput} from "@/shared/ui/FormControl/SearchInput";
 import {ChatListFixture} from "@/entity/chat/fixture/chat-list.fixture";
 import {ChatList} from "@/entity/chat/ui/ChatList";
 import cn from './styles.module.css';
-export const ChatFeed = () => {
-    const chatFeedSignal = useSignal(ChatListFixture);
+
+export const ChatFeed = ({selectedChatId = null, feedData = []} = {}) => {
+    console.log(
+        [selectedChatId, feedData]
+    );
+    const chatFeedSignal = useSignal(feedData);
     const [chatFeed] = chatFeedSignal;
 
     const [searchQuery, searchEffect] = useSignal('');
@@ -26,6 +30,9 @@ export const ChatFeed = () => {
             <a class=${cn.searchForm__profileLink} href="/profile/">Профиль</a>
             ${SearchInput({onInput: onSearch})}
         </form>
-        ${useStatefulComponent(chatFeedSignal, (chatList) => ChatList({chatList}))}
+        ${useStatefulComponent(
+                chatFeedSignal,
+                (chatList) => ChatList({chatList, selectedChatId})
+        )}
     `;
 };

@@ -1,5 +1,9 @@
 import {ChatListLayout} from "@/entity/chat/ui/ChatListLayout";
-import {ChatFeed as feed} from "@/entity/chat/ui/ChatFeed";
+import {ChatFeed} from "@/entity/chat/ui/ChatFeed";
 import {Chat as chat} from "@/entity/chat/ui/Chat";
+import {ChatListFixture} from "@/entity/chat/fixture/chat-list.fixture.js";
 
-export default () => ChatListLayout({feed, chat});
+export default () => {
+    const feedData = ChatListFixture;
+    return ChatListLayout({feed: ChatFeed({feedData}), chat});
+}

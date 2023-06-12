@@ -1,7 +1,7 @@
 .list {
     display: flex;
     flex-direction: column;
-    padding: 0 10px 10px;
+    padding: 0 0 10px;
     margin: 0;
     overflow: auto;
 }
@@ -17,10 +17,29 @@
 .list::-webkit-scrollbar-thumb {
     background-color: var(--ui-secondary);
 }
+
+.list__itemContent {
+    z-index: 1;
+}
+
+.list__itemCustom {
+
+    padding: 12px 10px;
+}
 .list__item {
     list-style: none;
-    padding: 12px 0;
     border-top: 1px solid var(--ui-secondary);
+    position: relative;
+}
+
+.list__item_selected::after {
+    content: "";
+    height: 96%;
+    width: 100%;
+    background: var(--ui-success);
+    top: 2%;
+    left: 0;
+    position: absolute;
 }
 
 .list__item:last-of-type {
