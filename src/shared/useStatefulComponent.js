@@ -4,7 +4,7 @@ import {directive} from "lit-html/directive.js";
 class StateDerictive extends AsyncDirective {
     render(
         signal = null,
-        component = (stateVal) => {
+        component = (_) => {
         }
     ) {
         if (signal !== null) {
