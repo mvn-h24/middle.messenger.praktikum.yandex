@@ -8,9 +8,6 @@ import {ChatList} from "@/entity/chat/ui/ChatList";
 import cn from './styles.module.css';
 
 export const ChatFeed = ({selectedChatId = null, feedData = []} = {}) => {
-    console.log(
-        [selectedChatId, feedData]
-    );
     const chatFeedSignal = useSignal(feedData);
     const [chatFeed] = chatFeedSignal;
 

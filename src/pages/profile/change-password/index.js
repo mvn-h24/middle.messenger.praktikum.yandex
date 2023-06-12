@@ -16,11 +16,11 @@ export default () => {
                     <div class="${cn.profileEdit__list}">
                         <div class="listItem ${cn.profileEdit__listItem}">
                             <span>Старый пароль</span>
-                            <input type="password" class="hiddenInput ${cn.profileEdit__input}" name="oldPasswd"/>
+                            <input type="password" class="hiddenInput ${cn.profileEdit__input}" name="oldPassword"/>
                         </div>
                         <div class="listItem ${cn.profileEdit__listItem}">
                             <span>Новый пароль</span>
-                            <input type="password" class="hiddenInput ${cn.profileEdit__input}" name="newPasswd"/>
+                            <input type="password" class="hiddenInput ${cn.profileEdit__input}" name="newPassword"/>
                         </div>
                         <div class="listItem ${cn.profileEdit__listItem}">
                             <span>Повторите новый пароль</span>

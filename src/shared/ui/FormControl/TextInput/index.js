@@ -4,20 +4,23 @@ import {classMap} from "lit-html/directives/class-map.js";
 
 export const TextInput = (
     {
+        name,
         type = 'text',
         placeholder,
         classes = {}
     } = {
+        name,
         type: 'text',
         placeholder: undefined,
         classes: {}
     }
 ) =>
     html`<input
-            placeholder="${placeholder}"
-            type="${type}"
-            class="${classMap({
+            name=${name}
+            placeholder=${placeholder}
+            type=${type}
+            class=${classMap({
                 ...classes,
                 [cn.input]: true
-            })}"
+            })}
     />`;

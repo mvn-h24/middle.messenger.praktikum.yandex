@@ -18,7 +18,7 @@ export const Dialog = ({chat = null, classes}) => {
             </div>
             <div class=${cn.dialog__control}>
                 <button class=${cn.dialog__messageAttachment}></button>
-                <textarea rows="1" class=${cn.dialog__textArea} placeholder="Сообщение"></textarea>
+                <textarea rows="1" class=${cn.dialog__textArea} placeholder="Сообщение" name="message"></textarea>
                 <button class=${cn.dialog__sendMessage}></button>
             </div>
         </article>
