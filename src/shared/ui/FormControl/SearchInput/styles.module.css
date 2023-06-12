@@ -1,0 +1,35 @@
+.input{
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: var(--ui-secondary);
+    border-radius: 5px;
+}
+.input::before{
+    content: "";
+    display: inline-block;
+    height: 18px;
+    width: 17px;
+    background-image: url('/assets/magnify.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-shrink:0;
+}
+.input__src::placeholder{
+    color: var(--typo--ui-secondary);
+}
+.input__src{
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 12px;
+    margin-left: 5px;
+    width: calc(50% + 17px);
+    transition: var(--ui-transition);
+}
+.input__src:focus{
+    outline: none;
+    flex-grow: 1;
+}
