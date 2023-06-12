@@ -17,7 +17,7 @@ Self-hosted приложение для онлайн общения.
 
 ### Страницы
 
-- [Главная - списко чатов](https://iridescent-cocada-21bdb1.netlify.app/)
+- [Главная - список чатов](https://iridescent-cocada-21bdb1.netlify.app/)
 - [404](https://iridescent-cocada-21bdb1.netlify.app/404/)
 - [500](https://iridescent-cocada-21bdb1.netlify.app/500/)
 - [Авторизация](https://iridescent-cocada-21bdb1.netlify.app/login/)
