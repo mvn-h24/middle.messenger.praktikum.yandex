@@ -4,6 +4,9 @@
     --ui-control--primary: hsl(223, 89%, 58%);
     --typo--ui-primary: hsl(225, 100%, 100%);
 
+     --ui-bg--primary: hsl(0, 0%, 100%);
+    --ui-bg--secondary: hsl(0, 0%, 98%);
+
     --typo--ui-secondary: hsl(0, 0%, 60%);
     --typo--ui-accent: hsl(0, 0%, 100%);
 
