@@ -1,7 +1,7 @@
 import {html} from "lit-html";
 import {when} from "lit-html/directives/when.js";
-import cn from './style.module.css';
 import {classMap} from "lit-html/directives/class-map.js";
+import cn from './style.module.css';
 
 export const ChatPreview = ({chatMeta={}, classes={}}={}) => {
     const {name, lastMessage, unreaded} = chatMeta;
