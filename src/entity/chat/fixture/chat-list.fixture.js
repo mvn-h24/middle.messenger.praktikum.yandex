@@ -1,5 +1,6 @@
 export const ChatListFixture = [
     {
+        id:"tnJuOddZ",
         name: 'Андрей',
         unreaded: 2,
         lastMessage: {
@@ -9,6 +10,7 @@ export const ChatListFixture = [
         },
     },
     {
+        id:"4mlftW1M",
         name: 'Киноклуб',
         unreaded: 0,
         lastMessage: {
@@ -18,6 +20,7 @@ export const ChatListFixture = [
         },
     },
     {
+        id:"tVI9L608",
         name: 'Илья',
         unreaded: 4,
         lastMessage: {
@@ -27,6 +30,7 @@ export const ChatListFixture = [
         },
     },
     {
+        id:"kzQ1dAgg",
         name: 'Вадим',
         unreaded: 0,
         lastMessage: {
@@ -36,6 +40,7 @@ export const ChatListFixture = [
         },
     },
     {
+        id:"ykYfdTsm",
         name: 'тет-а-теты',
         unreaded: 0,
         lastMessage: {
@@ -45,6 +50,7 @@ export const ChatListFixture = [
         },
     },
     {
+        id:"dr2cxmtv",
         name: '1, 2, 3',
         unreaded: 0,
         lastMessage: {
@@ -54,6 +60,7 @@ export const ChatListFixture = [
         },
     },
     {
+        id:"Enygaoye",
         name: 'Design Destroyer',
         unreaded: 0,
         lastMessage: {
@@ -63,6 +70,7 @@ export const ChatListFixture = [
         },
     },
     {
+        id:"a1diWAXn",
         name: 'Day.',
         unreaded: 0,
         lastMessage: {
@@ -72,6 +80,7 @@ export const ChatListFixture = [
         },
     },
     {
+        id:"e8ce4m5m",
         name: 'Стас Рогозин',
         unreaded: 0,
         lastMessage: {
@@ -81,3 +90,12 @@ export const ChatListFixture = [
         },
     }
 ];
+
+
+
+
+
+
+
+
+
