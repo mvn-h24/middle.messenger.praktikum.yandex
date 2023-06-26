@@ -1,0 +1,15 @@
+.pageError{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pageError__status{
+    font-size: 40px;
+    margin: 0;
+}
+.pageError__text{
+    margin-top: 20px;
+}
+.pageError__appLink{
+    margin-top: 70px;
+}

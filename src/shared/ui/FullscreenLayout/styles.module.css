@@ -1,0 +1,7 @@
+.layout{
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    align-self: stretch;
+    justify-self: stretch;
+}

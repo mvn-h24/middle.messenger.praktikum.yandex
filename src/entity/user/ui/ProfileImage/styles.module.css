@@ -1,0 +1,45 @@
+.profileImage {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.profileImage__btn {
+    --profile-img: url('/assets/empty-img.svg');
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--ui-secondary);
+    background-image: var(--profile-img);
+    background-repeat: no-repeat;
+    background-position: center center;
+    user-select: none;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0;
+}
+
+.profileImage__btn::before {
+    content: 'Поменять \A аватар';
+    white-space: pre-wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--typo--ui-accent);
+    width:100%;
+    height:100%;
+    transition: var(--ui-transition);
+    opacity: 0;
+}
+.profileImage__btn_uploading,
+.profileImage__btn:hover::before {
+    opacity: 1;
+}
+.profileImage__name {
+    font-size: 16px;
+    font-variation-settings: "wght" 600;
+}

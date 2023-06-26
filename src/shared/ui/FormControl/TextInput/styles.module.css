@@ -1,0 +1,13 @@
+.input{
+    padding: 6px 0;
+    font-size: 13px;
+    line-height: 13px;
+    border: none;
+    border-bottom: 1px solid var(--ui-control--primary);
+}
+.input:focus-visible{
+    outline: none;
+}
+.input::placeholder{
+    color: var(--typo--ui-secondary);
+}

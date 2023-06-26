@@ -1,0 +1,11 @@
+.placeholder{
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--typo--ui-secondary);
+}
+.chat__dialog{
+    flex-grow: 1;
+    height: 100%;
+    box-sizing: border-box;
+    max-height: 100vh;
+}

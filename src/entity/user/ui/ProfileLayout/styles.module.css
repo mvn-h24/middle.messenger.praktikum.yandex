@@ -1,0 +1,16 @@
+.profileLayout{
+    max-width: 510px;
+    width: 100%;
+}
+.profile__pageControlPanel{
+    position: absolute;
+    height: 100%;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    border-right: 1px solid var(--ui-bg--secondary-dark);
+    background-color: var(--ui-bg--secondary);
+}
